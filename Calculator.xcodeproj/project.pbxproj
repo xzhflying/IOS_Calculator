@@ -10,10 +10,10 @@
 		4604CD631BEB095F000DB1CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604CD621BEB095F000DB1CB /* AppDelegate.swift */; };
 		4604CD651BEB095F000DB1CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604CD641BEB095F000DB1CB /* ViewController.swift */; };
 		4604CD681BEB095F000DB1CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4604CD661BEB095F000DB1CB /* Main.storyboard */; };
-		4604CD6A1BEB095F000DB1CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4604CD691BEB095F000DB1CB /* Assets.xcassets */; };
 		4604CD6D1BEB095F000DB1CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4604CD6B1BEB095F000DB1CB /* LaunchScreen.storyboard */; };
 		4604CD781BEB095F000DB1CB /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604CD771BEB095F000DB1CB /* CalculatorTests.swift */; };
 		4604CD831BEB095F000DB1CB /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4604CD821BEB095F000DB1CB /* CalculatorUITests.swift */; };
+		46D837F01BECA840003B8026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46D837EF1BECA840003B8026 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 		4604CD621BEB095F000DB1CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4604CD641BEB095F000DB1CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4604CD671BEB095F000DB1CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4604CD691BEB095F000DB1CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4604CD6C1BEB095F000DB1CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4604CD6E1BEB095F000DB1CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4604CD731BEB095F000DB1CB /* CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +46,7 @@
 		4604CD7E1BEB095F000DB1CB /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4604CD821BEB095F000DB1CB /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		4604CD841BEB095F000DB1CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46D837EF1BECA840003B8026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 				4604CD621BEB095F000DB1CB /* AppDelegate.swift */,
 				4604CD641BEB095F000DB1CB /* ViewController.swift */,
 				4604CD661BEB095F000DB1CB /* Main.storyboard */,
-				4604CD691BEB095F000DB1CB /* Assets.xcassets */,
 				4604CD6B1BEB095F000DB1CB /* LaunchScreen.storyboard */,
+				46D837EF1BECA840003B8026 /* Assets.xcassets */,
 				4604CD6E1BEB095F000DB1CB /* Info.plist */,
 			);
 			path = Calculator;
@@ -230,7 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4604CD6D1BEB095F000DB1CB /* LaunchScreen.storyboard in Resources */,
-				4604CD6A1BEB095F000DB1CB /* Assets.xcassets in Resources */,
+				46D837F01BECA840003B8026 /* Assets.xcassets in Resources */,
 				4604CD681BEB095F000DB1CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +484,7 @@
 				4604CD891BEB095F000DB1CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4604CD8A1BEB095F000DB1CB /* Build configuration list for PBXNativeTarget "CalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +493,7 @@
 				4604CD8C1BEB095F000DB1CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4604CD8D1BEB095F000DB1CB /* Build configuration list for PBXNativeTarget "CalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +502,7 @@
 				4604CD8F1BEB095F000DB1CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
