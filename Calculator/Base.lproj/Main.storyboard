@@ -191,7 +191,7 @@
                                 <state key="selected" backgroundImage="blank-black-button"/>
                                 <state key="highlighted" backgroundImage="blank-black-button"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pYD-iS-nlJ"/>
+                                    <action selector="clearInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ldm-K1-36O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X2K-gu-vjP">
@@ -227,7 +227,7 @@
                                 <state key="selected" backgroundImage="blank-black-button"/>
                                 <state key="highlighted" backgroundImage="blank-black-button"/>
                                 <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwg-Q0-PJC"/>
+                                    <action selector="deleteLastInput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VoD-83-NfS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izn-ih-lh7">
@@ -240,20 +240,6 @@
                                 <state key="highlighted" backgroundImage="blank-black-button"/>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="P5p-be-pNf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-VI-cgs">
-                                <rect key="frame" x="440" y="408" width="140" height="97"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="+/( (" backgroundImage="black-button-click">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <state key="selected" backgroundImage="blank-black-button"/>
-                                <state key="highlighted" backgroundImage="blank-black-button"/>
-                                <connections>
-                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ng-mA-ebG"/>
-                                    <outletCollection property="gestureRecognizers" destination="QQs-Ei-lX7" appends="YES" id="QMx-q9-0lN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXU-hY-3lu">
@@ -280,6 +266,20 @@
                                 <state key="highlighted" backgroundImage="blank-black-button"/>
                                 <connections>
                                     <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWF-FX-a6A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI2-VI-cgs">
+                                <rect key="frame" x="440" y="408" width="140" height="97"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="+/(" backgroundImage="black-button-click">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected" backgroundImage="blank-black-button"/>
+                                <state key="highlighted" backgroundImage="blank-black-button"/>
+                                <connections>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ng-mA-ebG"/>
+                                    <outletCollection property="gestureRecognizers" destination="QQs-Ei-lX7" appends="YES" id="QMx-q9-0lN"/>
                                 </connections>
                             </button>
                         </subviews>

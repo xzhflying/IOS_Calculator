@@ -33,6 +33,23 @@ class ViewController: UIViewController
         }
     }
     
+    @IBAction func clearInput(sender: UIButton) {
+        display.text = "0"
+        userIsInputing = false
+    }
+    
+    @IBAction func deleteLastInput(sender: UIButton) {
+        if (userIsInputing && display.text!.characters.count > 1)
+        {
+            display.text!.removeAtIndex(display.text!.endIndex.predecessor())
+        }
+        else if (userIsInputing)
+        {
+            display.text! = "0"
+            userIsInputing = false
+        }
+    }
+    
     func appendToLabel(str :String){
         if( userIsInputing )
         {
