@@ -11,12 +11,14 @@ import UIKit
 class ViewController: UIViewController
 {
     @IBOutlet weak var display: UILabel!
-
+    
     var userIsInputing: Bool = false
     
+    var theCore = CalculatorCore()
+    
     @IBAction func appendDigit(sender: UIButton) {
-        let digit = sender.currentTitle!
-        appendToLabel(firstButtonValue(digit))
+        let digit = firstButtonValue(sender.currentTitle!)
+        appendToLabel(digit)
     }
     
     @IBAction func addButtonOptionalValue(sender :UILongPressGestureRecognizer) {
@@ -36,6 +38,8 @@ class ViewController: UIViewController
     @IBAction func clearInput(sender: UIButton) {
         display.text = "0"
         userIsInputing = false
+        theCore.digitStack.removeAll()
+        theCore.operatorStack.removeAll()
     }
     
     @IBAction func deleteLastInput(sender: UIButton) {
@@ -47,6 +51,14 @@ class ViewController: UIViewController
         {
             display.text! = "0"
             userIsInputing = false
+        }
+    }
+    
+    @IBAction func theResult(sender: AnyObject) {
+        let result = theCore.calculate()
+        if result != nil
+        {
+            display.text = String(result!)
         }
     }
     

@@ -169,6 +169,9 @@
                                 </state>
                                 <state key="selected" backgroundImage="blank-black-button"/>
                                 <state key="highlighted" backgroundImage="blank-black-button"/>
+                                <connections>
+                                    <action selector="theResult:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hEi-4p-zLy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDy-V5-p3l">
                                 <rect key="frame" x="440" y="215" width="140" height="97"/>
