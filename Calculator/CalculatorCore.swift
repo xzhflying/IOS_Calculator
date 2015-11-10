@@ -12,23 +12,23 @@ class CalculatorCore{
     let operators = ["+","-","*","/","∧","√","(",")"]
     
     var digitStack :Array<Double>
-    var operatorStack :Array<String>
+    var operatorStack :Array<Operator>
     
     enum Expression{
-        case Operator(String)
-        case Number(Double)
+        case TheOperator(Operator)
+        case TheNumber(Double)
     }
     
     init(){
         digitStack = Array<Double>()
-        operatorStack = Array<String>()
+        operatorStack = Array<Operator>()
     }
     
     func calculate() -> Double?{
         while(!operatorStack.isEmpty && !digitStack.isEmpty)
         {
-            let op :String =  operatorStack.removeLast()
-            switch op{
+            let op :Operator =  operatorStack.removeLast()
+            switch op.getByString(){
             case "+":
                 let digit1 :Double = digitStack.removeLast()
                 let digit2 :Double = digitStack.removeLast()
@@ -46,24 +46,6 @@ class CalculatorCore{
     
     func analyseExpression() -> Bool
     {
-     return true
-    }
-    
-    func comparePriority(op1 :Expression.Operator, op2 :Expression.Operator) -> Int{
-        let priority1 = op1.getPriority()
-        let priority2 = op2.getPriority()
-        if (priority1 > priority2)
-        {
-            return 1
-        }
-        else if (priority1 < priority2)
-        {
-            return -1
-        }
-        else
-        {
-            return 0
-        }
-        
+        return true
     }
 }
